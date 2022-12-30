@@ -1,0 +1,26 @@
+.aboutUs {
+  font-family: "Merienda";
+  font-style: normal;
+  color: #000000;
+  width: 1440px;
+  height: 520px;
+  background: #ffffff;
+}
+.aboutUs h4 {
+  padding-top: 80px;
+}
+.imgLogoDarck {
+  display: flex;
+  margin: 10px auto;
+  width: 200px;
+  height: 30px;
+  background: url(./aboutUsImg/BeansLogo.png) no-repeat;
+}
+.blockAboutUs {
+  margin: auto;
+  margin-top: 30px;
+  padding: 5px 5px 0 5px;
+  width: 600px;
+  height: 225px;
+  text-align: center;
+}
