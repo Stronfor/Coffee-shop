@@ -1,10 +1,36 @@
-.footer {
+#footer {
   width: 1440px;
   height: 150px;
+  padding-top: 45px;
+}
+
+#foot-nav li a {
   font-family: "Merienda";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 17px;
   color: #000000;
+}
+
+#foot-nav li a:hover {
+  font-size: 14px;
+}
+#foot-nav {
+  margin: auto;
+  width: 360px;
+  height: 40px;
+  padding-top: 0;
+}
+
+.img-footer {
+  position: absolute;
+  top: -13px;
+  left: -16px;
+  width: 35px;
+  height: 35px;
+  background-image: url(./footerImg/footer-beensBlack.png);
+}
+#img-footer {
+  position: relative;
+  display: flex;
 }
