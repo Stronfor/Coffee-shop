@@ -13,9 +13,32 @@ import { Container, Row, Col } from "react-bootstrap";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      data: [
+        {
+          goodsName: "Solimo Coffee Beans 2 kg",
+          price: 10.73,
+          number: 1,
+          name: "solimo",
+        },
+        {
+          goodsName: "Presto Coffee Beans 1 kg",
+          price: 15.99,
+          number: 2,
+          name: "presto",
+        },
+        {
+          goodsName: "AROMISTICO Coffee 1kg",
+          price: 6.99,
+          number: 3,
+          name: "aromistico",
+        },
+      ],
+      height: 260,
+    };
   }
   render() {
+    const { data } = this.state;
     return (
       <div className="App">
         <Container fluid>
@@ -31,7 +54,7 @@ class App extends Component {
           </Row>
           <Row>
             <Col>
-              <OurBest />
+              <OurBest dataServ={data} />
             </Col>
           </Row>
           <Row>
