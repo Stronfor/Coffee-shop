@@ -27,6 +27,7 @@ const Content = () => {
       id: 3,
     },
   ];
+
   return (
     <Row>
       <Col>
