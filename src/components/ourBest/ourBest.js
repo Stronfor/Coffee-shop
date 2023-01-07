@@ -9,9 +9,9 @@ import solimo from "./ourBestImg/solimo.png";
 const OurBest = ({ dataServ }) => {
   const img = [solimo, presto, aromistico];
 
-  const col = dataServ.map(({ goodsName, price, number, name }) => {
+  const col = dataServ.map(({ goodsName, price, number, name, id }) => {
     return (
-      <Col className="col">
+      <Col className="col" key={id}>
         <img className="goods-img" src={img[number - 1]} alt={name} />
         <p className="goods-name">{goodsName}</p>
         <p className="goods-price">{`${price}$`}</p>

@@ -1,8 +1,7 @@
 import { Component } from "react";
 
 import Header from "../header/header";
-import AboutUs from "../aboutUs/aboutUs";
-import OurBest from "../ourBest/ourBest";
+import Content from "../content/content";
 import Footer from "../footer/footer";
 
 import "./App.css";
@@ -14,26 +13,6 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [
-        {
-          goodsName: "Solimo Coffee Beans 2 kg",
-          price: 10.73,
-          number: 1,
-          name: "solimo",
-        },
-        {
-          goodsName: "Presto Coffee Beans 1 kg",
-          price: 15.99,
-          number: 2,
-          name: "presto",
-        },
-        {
-          goodsName: "AROMISTICO Coffee 1kg",
-          price: 6.99,
-          number: 3,
-          name: "aromistico",
-        },
-      ],
       height: 260,
     };
   }
@@ -47,16 +26,7 @@ class App extends Component {
               <Header />
             </Col>
           </Row>
-          <Row>
-            <Col>
-              <AboutUs />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <OurBest dataServ={data} />
-            </Col>
-          </Row>
+          <Content />
           <Row>
             <Col>
               <Footer />
